@@ -39,13 +39,13 @@ load("@xchammer//:BazelExtensions/xcodeproject.bzl", "xcode_project")
 load("@xchammer//:BazelExtensions/xchammerconfig.bzl", "project_config")
 
 xcode_project(
-  name = "xcode",
-  targets = ["app"],
-  bazel = "tools/bazelwrapper",
-  project_config = project_config(
-     paths = ["**"],
-     generate_xcode_schemes = True,
-     generate_transitive_xcode_targets = True,
-   ),
-   tags = ["manual"],
+    name = "xcode",
+    bazel = "tools/bazelwrapper",
+    project_config = project_config(
+        generate_transitive_xcode_targets = True,
+        generate_xcode_schemes = True,
+        paths = ["**"],
+    ),
+    tags = ["manual"],
+    targets = ["app"],
 )
