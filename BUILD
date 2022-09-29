@@ -26,6 +26,7 @@ macos_application(
     entitlements = "resources/entitlements.plist",
     infoplists = ["resources/Info.plist"],
     linkopts = [
+        "-framework AppKit",
         "-framework Security",
     ],
     minimum_os_version = "10.10",
@@ -43,8 +44,8 @@ xcode_project(
   bazel = "tools/bazelwrapper",
   project_config = project_config(
      paths = ["**"],
-     #generate_xcode_schemes = True,
-     #generate_transitive_xcode_targets = True,
+     generate_xcode_schemes = True,
+     generate_transitive_xcode_targets = True,
    ),
    tags = ["manual"],
 )

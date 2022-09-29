@@ -87,3 +87,4 @@ clang-analysis/
 
 *.xcodeproj/
 .xcode_select_env
+external
