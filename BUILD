@@ -42,8 +42,7 @@ xcode_project(
     name = "xcode",
     bazel = "tools/bazelwrapper",
     project_config = project_config(
-        generate_transitive_xcode_targets = True,
-        generate_xcode_schemes = True,
+        generate_xcode_schemes = False,
         paths = ["**"],
     ),
     tags = ["manual"],
