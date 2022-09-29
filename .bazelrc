@@ -1,0 +1,2 @@
+# this is needed for XCHammer to write out the project
+build --spawn_strategy=standalone

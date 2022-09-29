@@ -84,3 +84,6 @@ provision_profiles/*
 !provision_profiles/BUILD
 
 clang-analysis/
+
+*.xcodeproj/
+.xcode_select_env
